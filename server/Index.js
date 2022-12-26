@@ -67,7 +67,7 @@ io.on("connection", (socket) => {
     }
     activeChats = activeChats.filter((item) => item.adminId !== socket.id);
 
-    // client disconnected
+     client disconnected
     const removeIndexClient = activeChats.findIndex((item) => item.clientId === socket.id);
     if (removeIndexClient !== -1) {
        activeChats.splice(removeIndexClient, 1); 
