@@ -64,7 +64,7 @@ const CreateProductPageComponent = ({
       createProductApiRequest(formInputs)
         .then((data) => {
           if (images) {
-            if (1 != 1) {
+            if (1 == 1) {
               // to do: change to !==
               uploadImagesApiRequest(images, data.productId)
                 .then((res) => {})
